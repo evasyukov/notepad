@@ -9,7 +9,18 @@
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      note: localStorage.getItem("note") || "",
+    }
+  },
+  methods: {
+    saveNote() {
+      localStorage.setItem("note", this.note)
+    },
+  },
+}
 </script>
 
 <style scoped>
