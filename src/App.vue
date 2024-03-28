@@ -2,7 +2,7 @@
   <div id="app">
     <div class="title">
       <h1>Notepad</h1>
-      <button @click="addNote">add</button>
+      <button @click="addNote">+</button>
     </div>
     <Notepad ref="notepad" />
   </div>
@@ -26,7 +26,12 @@ export default {
 <style>
 .title {
   padding: 15px;
-  display: inline;
+  display: flex;
+  align-items: center;
+}
+.title button {
+  height: 2vh;
+  margin-left: 2vh;
 }
 .title h1 {
   color: aliceblue;

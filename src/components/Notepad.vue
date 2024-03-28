@@ -1,5 +1,5 @@
 <template>
-  <div class="list">
+  <div class="notes-list">
     <div v-for="(note, index) in notes" :key="note.id">
       <textarea
         v-model="note.text"
@@ -46,8 +46,11 @@ textarea {
   padding: 10px;
   margin: 10px;
   box-sizing: border-box;
+  resize: none;
 }
-.list {
+.notes-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 85%;
 }
 </style>
