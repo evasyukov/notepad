@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div class="title">
-      <h1>Notepad</h1>
-      <button @click="addNote">+</button>
+      <div class="title-text">Notepad</div>
+      <button class="title-button_add" @click="addNote">+</button>
     </div>
     <Notepad ref="notepad" />
   </div>
@@ -29,11 +29,13 @@ export default {
   display: flex;
   align-items: center;
 }
-.title button {
+
+.title-text {
+  color: aliceblue;
+}
+
+.title-button_add {
   height: 2vh;
   margin-left: 2vh;
-}
-.title h1 {
-  color: aliceblue;
 }
 </style>
