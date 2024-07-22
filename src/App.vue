@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+
     <div class="title">
       <div class="title-text">Notepad</div>
       <button class="title-button_add" @click="addNote">+</button>
     </div>
     <Notepad ref="notepad" />
-  </div>
+
 </template>
 
 <script>
