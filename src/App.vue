@@ -1,11 +1,9 @@
 <template>
-
-    <div class="title">
-      <div class="title-text">Notepad</div>
-      <button class="title-button_add" @click="addNote">+</button>
-    </div>
-    <Notepad ref="notepad" />
-
+  <div class="title">
+    <div>Notepad</div>
+    <button class="title-button_add" @click="addNote">+</button>
+  </div>
+  <Notepad ref="notepad" />
 </template>
 
 <script>
@@ -24,18 +22,39 @@ export default {
 </script>
 
 <style>
-.title {
-  padding: 15px;
-  display: flex;
-  align-items: center;
+body {
+  background-color: #242424;
 }
 
-.title-text {
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px;
+
   color: aliceblue;
 }
 
 .title-button_add {
-  height: 2vh;
-  margin-left: 2vh;
+  height: 30px;
+  width: 30px;
+
+  color: #fff;
+  background-color: #6b6b6b;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 22px;
 }
 </style>

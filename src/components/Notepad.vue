@@ -43,6 +43,7 @@ export default {
 .notes-list {
   display: flex;
   flex-wrap: wrap;
+
   width: 80%;
 }
 .notes {
@@ -55,15 +56,18 @@ export default {
 
   border: 2px solid rgb(106, 104, 104);
   border-radius: 5px;
-  
-  box-shadow: 1px 1px 10px rgb(92, 92, 92);
 
   & textarea {
     width: 100%;
     height: 250px;
+
     padding: 10px;
+
     box-sizing: border-box;
     resize: none;
+
+    color: #fff;
+    background-color: #3b3b3b;
   }
 
   & button {
@@ -71,6 +75,10 @@ export default {
     width: 100%;
 
     font-size: 100%;
+
+    color: #fff;
+    background-color: #6b6b6b;
+    border: none;
   }
 }
 </style>
